@@ -43,7 +43,6 @@ return require('telescope').register_extension {
           end
 
           local rg_args = flatten { conf.vimgrep_arguments, "." }
-          table.remove(rg_args, 1)
 
           return {
             writer = Job:new {
